@@ -1,0 +1,12 @@
+
+{
+  "name": "nativescript-ios-action-bar-popup-menu",
+  "main" : "index.js",
+  "version": "0.0.1",
+  "nativescript": {
+    "platforms": {
+      "ios": "3.0.0",
+      "android": "3.0.0"
+    }
+  }
+}
