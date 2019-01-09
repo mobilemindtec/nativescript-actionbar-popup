@@ -56,4 +56,4 @@ if (application.ios) {
 
 ```
 
-https://github.com/mobilemindtec/nativescript-ios-action-bar-popup-menu/blob/master/screen.png
+![alt text](https://github.com/mobilemindtec/nativescript-ios-action-bar-popup-menu/blob/master/screen.png)
