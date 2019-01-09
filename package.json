@@ -1,6 +1,6 @@
 
 {
-  "name": "nativescript-ios-action-bar-popup-menu",
+  "name": "nativescript-actionbar-popup",
   "main" : "index.js",
   "version": "0.0.1",
   "nativescript": {
