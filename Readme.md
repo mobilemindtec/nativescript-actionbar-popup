@@ -1,4 +1,4 @@
-# nativescript-ios-action-bar-popup-menu
+# nativescript-actionbar-popup
 IOS Action Bar PopUp Menu
 
 
@@ -6,7 +6,7 @@ IOS Action Bar PopUp Menu
 
 ```
 
-var PopupMenu = require("nativescript-ios-action-bar-popup-menu")
+var PopupMenu = require("nativescript-actionbar-popup")
 
 exports.onNavigatingTo = function(args) {
 
@@ -38,7 +38,7 @@ To enable global close popup when user touch out of menu
 ```
 
 if (application.ios) {
-	var PopupMenu = require("nativescript-ios-action-bar-popup-menu")
+	var PopupMenu = require("nativescript-actionbar-popup")
   MyDelegate = UIResponder.extend({
 
   	touchesBeganWithEvent: function(touches, event){
@@ -56,4 +56,4 @@ if (application.ios) {
 
 ```
 
-![alt text](https://github.com/mobilemindtec/nativescript-ios-action-bar-popup-menu/blob/master/screen.png)
+![alt text](https://github.com/mobilemindtec/nativescript-actionbar-popup/blob/master/screen.png)
