@@ -6,7 +6,7 @@ IOS Action Bar PopUp Menu
 
 ```
 
-var PopupMenu = require("./index")
+var PopupMenu = require("nativescript-ios-action-bar-popup-menu")
 
 exports.onNavigatingTo = function(args) {
 
@@ -38,7 +38,7 @@ To enable global close popup when user touch out of menu
 ```
 
 if (application.ios) {
-	var PopupMenu = require("./index")
+	var PopupMenu = require("nativescript-ios-action-bar-popup-menu")
   MyDelegate = UIResponder.extend({
 
   	touchesBeganWithEvent: function(touches, event){
