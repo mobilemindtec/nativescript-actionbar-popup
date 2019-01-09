@@ -5,9 +5,9 @@ purpose of the file is to pass control to the app’s first module.
 */
 
 var application = require("tns-core-modules/application");
-var PopupMenu = require("./index")
 
 if (application.ios) {
+	var PopupMenu = require("./index")
   MyDelegate = UIResponder.extend({
 
   	touchesBeganWithEvent: function(touches, event){
