@@ -163,7 +163,7 @@ exports.configure = function(params) {
 
 
   
-  var frame = CGRectMake(navSize.width - (width+2), (navOrigin.y + navSize.height) * .95, width, height)
+  var frame = CGRectMake(navSize.width - width, (navOrigin.y + navSize.height) * .90, width, height)
   menuView = UIView.alloc().initWithFrame(frame)
   menuView.backgroundColor = bgColor
   menuView.tag = TAG_VIEWS
