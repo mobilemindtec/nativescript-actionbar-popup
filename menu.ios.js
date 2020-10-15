@@ -121,8 +121,8 @@ exports.configure = function(params) {
 
 	TAG_VIEWS = params.tag || TAG_VIEWS
 
-	var whiteColor = utils.ios.getter(UIColor, UIColor.whiteColor)
-	var blackColor = utils.ios.getter(UIColor, UIColor.blackColor)
+	var whiteColor = UIColor.whiteColor
+	var blackColor = UIColor.blackColor
 
 	var font = UIFont.systemFontOfSize(14.0)	 //UIFont.fontWithNameSize("Thaoma", 15.0)	
 
