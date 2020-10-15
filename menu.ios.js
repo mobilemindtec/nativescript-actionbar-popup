@@ -65,7 +65,7 @@ function menuOpen(){
 // call in delegate
 exports.touchesBeganWithEvent = function(touches, event){
 
-	if(touches){
+	if(menuView && touches){
 		var touch = touches.anyObject()
 		if(touch && touch.view){
 
