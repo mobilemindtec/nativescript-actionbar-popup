@@ -1,7 +1,6 @@
 
-var frameModule = require("ui/frame")
-var utils = require("utils/utils")
-var Color = require("tns-core-modules/color").Color
+var frameModule = require("@nativescript/core/ui/frame")
+var Color = require("@nativescript/core/color").Color
 
 var TapHandler = NSObject.extend({
 
@@ -51,7 +50,7 @@ function menuClose() {
 }
 
 function menuOpen(){
-	var controller = frameModule.topmost().ios.controller 
+	var controller = frameModule.Frame.topmost().ios.controller 
 	controller.view.addSubview(menuView)
 	menuView.transform = CGAffineTransformMakeScale(0.1,0.1)
 	UIView.beginAnimationsContext("fadeInNewView", null)
@@ -63,7 +62,7 @@ function menuOpen(){
 }
 
 // call in delegate
-exports.touchesBeganWithEvent = function(touches, event){
+exports.menuTouchesBeganWithEvent = function(touches, event){
 
 	if(menuView && touches){
 		var touch = touches.anyObject()
@@ -77,19 +76,21 @@ exports.touchesBeganWithEvent = function(touches, event){
 	}
 }
 
+
+
 exports.hide = function(){
 	menuClose()
 }
 
 exports.show = function(){
-	var controller = frameModule.topmost().ios.controller 
+	var controller = frameModule.Frame.topmost().ios.controller 
 	if(!menuView.isDescendantOfView(controller.view)){		
 		menuOpen()
 	}
 }
 
 exports.toggle = function(){
-	var controller = frameModule.topmost().ios.controller 
+	var controller = frameModule.Frame.topmost().ios.controller 
 	if(!menuView.isDescendantOfView(controller.view)){
 		menuOpen()
 	}else{
@@ -139,7 +140,7 @@ exports.configure = function(params) {
 	callback.viewCreated = params.viewCreated
 
 		
-  var controller = frameModule.topmost().ios.controller 
+  var controller = frameModule.Frame.topmost().ios.controller 
   var navSize = controller.navigationBar.frame.size
   var navOrigin = controller.navigationBar.frame.origin
   var maxWidth = navSize.width*0.55 // max width 55% of view width
@@ -154,7 +155,7 @@ exports.configure = function(params) {
   }
 
   width = maxWidth
-  maxNameSize += 60
+  maxNameSize += 80
 
   if(maxNameSize < minWidth)
   	width = minWidth
