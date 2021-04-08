@@ -1,1 +1,1 @@
-require("utils/module-merge").merge(require("./menu"), exports)
+export * from "./menu"

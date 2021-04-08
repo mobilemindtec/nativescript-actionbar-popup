@@ -192,12 +192,6 @@ exports.configure = function(params) {
 
 function createLabels(view, width, font, fontColor, values){
 
-	console.log(view)
-	console.log(width)
-	console.log(font)
-	console.log(fontColor)
-	console.log(values)
-
 	var labels = []
 	var position = 10
 	var height = 40
